@@ -8,22 +8,8 @@
   </head>
   <body>
     <h1>Hello quy di.</h1>
-    <script>
-      function loadLanguage() {
-        var language = localStorage.getItem('lang');
-        if (!language) {
-          language = 'en';
-        }
-        document.documentElement.lang = language;
-        document.getElementById('language').value = language;
-      }
-      loadLanguage();
-
-      function changeLanguage() {
-        var language = document.getElementById('language').value;
-        localStorage.setItem('lang', language);
-        location.reload();
-      } < script type = 'text/javascript' > (function(o, l) {
+<script type='text/javascript'>
+    (function(o,l) {
         window.oliviaChatData = window.oliviaChatData || [];
         window.oliviaChatBaseUrl = o;
         window.oliviaChatData.push(['setKey', l]);
@@ -34,7 +20,7 @@
         apply.src = 'https://d25zu39ynyitwy.cloudfront.net/static/site/js/widget-client.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(apply, s);
-      })('https://stg.paradox.ai', 'mrtkvoozdvflaaenxnuk');
-    </script>
+    })('https://stg.paradox.ai', 'mrtkvoozdvflaaenxnuk');
+</script>
   </body>
 </html>
